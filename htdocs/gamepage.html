@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>	<!-- Contains the meta tags of the website -->
+		<title>Mathematical Madness</title>
+		<meta charset="UTF-8"> 
+		<meta name="author" content="Roddinn">
+		<meta name="keywords" content="HTML, CSS, JS, Math, Mind Game">
+		<meta name="revised" content="04-01-2022">
+		<link rel="icon" href="../images/icon.png" type="image/gif">
+		<link rel="stylesheet" type="text/css" href="../css/gamepagecss.css">
+			<!-- This calls the stylesheet of this page -->
+	</head>
+
+	<body>
+			<!-- The header contains the current Problem and the Timer -->
+		<header id="header">
+			<h1 id="problem"></h1>
+
+			<h1 id="timer"></h1>
+		</header>
+
+			<!-- The section contains the equation the player must solve -->
+<!-- The dynamic widening of the equation and choices is a artistic choice-->
+		<section id="section">
+			<p id="equation"></p>
+		</section>
+
+			<!-- This div contains buttons of the four choices -->
+		<div class="choices" id="choice">	<!-- They use a function and variables in the js -->
+			<button class="answer" id="b0" onClick="checkAnswer(this.id, aIndex, pNum);"></button>
+			<button class="answer" id="b1" onClick="checkAnswer(this.id, aIndex, pNum);"></button>
+			<button class="answer" id="b2" onClick="checkAnswer(this.id, aIndex, pNum);"></button>
+			<button class="answer" id="b3" onClick="checkAnswer(this.id, aIndex, pNum);"></button>
+
+			<!-- Use of this.id to get the button id retrived from 
+	https://stackoverflow.com/questions/4825295/onclick-to-get-the-id-of-the-clicked-button-->
+		</div>
+
+			<!-- This div contains the Game Over Screen that appears when the player loses -->
+		<div id="overScreen">
+			<h1 id="gameOver"></h1>
+			<h1 id="score"></h1>
+
+			<!-- This button reloads the page when clicked -->
+			<button id="retry" onClick="location.reload();" disabled></button>
+		</div>
+
+		<script src="../js/gamepagejs.js"></script>
+			<!-- This calls the javascript of this page -->
+	</body>
+</html>

@@ -1,0 +1,45 @@
+body {
+    /* Customizes the page's background and fontface */
+    background: royalblue url(../images/bg.png) repeat fixed center;
+	background-size: auto;
+    
+    text-align: center;
+    font-family: "Comic Sans MS", Calibri, Arial;
+    color: white;
+}
+
+header {
+    /* Defines the Header with the title & description */
+    margin-top: 50px;
+    margin-bottom: 100px;
+    border: 5px dashed silver;
+}
+
+h1#title {
+    /* Defines the title of the page */
+    font-size: 64px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+p#name {
+    /* Defines the name under the title */
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
+p#desc {
+    /* Defines the title of the page */
+    font-size: 32px;
+}
+
+button#start {
+    /* Defines the button that links to the Game Page */
+    font-size: 28px;
+    font-family: "Comic Sans MS";
+    background-color: royalblue;
+    color: white;
+    border: 4px solid silver;
+    padding: 20px 50px;
+}
